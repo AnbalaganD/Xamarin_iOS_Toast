@@ -10,5 +10,10 @@ namespace Toast
         {
             // Note: this .ctor should not contain any initialization logic.
         }
+
+        partial void OnShowToastClicked(UIButton sender)
+        {
+            Toast.Shared.Show(messageTextField.Text);
+        }
     }
 }
